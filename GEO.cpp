@@ -19,7 +19,7 @@ double VecNorm(const Vec &x, double p) {
 }
 
 void GEO(TestFunction fun, int nvars, const Vec &lb, const Vec &ub, int populationSize, int maxIterations, 
-         double attackStart, double attackEnd, double cruiseStart, double cruiseEnd) {
+         double attackStart = 0.5, double attackEnd = 2, double cruiseStart = 1, double cruiseEnd = 0.5) {
     random_device rd;
     mt19937 gen(rd());
     uniform_real_distribution<> dis(0.0, 1.0);
