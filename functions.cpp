@@ -9,7 +9,6 @@ using namespace std;
 
 typedef vector<double> Vec;
 
-// Utility functions
 double sum(const Vec &x) {
     return accumulate(x.begin(), x.end(), 0.0);
 }
@@ -22,7 +21,6 @@ double mean(const Vec &x) {
     return sum(x) / x.size();
 }
 
-// Function implementations
 double ackley(const Vec &x, double a = 20, double b = 0.2, double c = 2 * M_PI) {
     double s1 = 0.0, s2 = 0.0;
     for (double xi : x) {
@@ -108,7 +106,6 @@ double zakharov(const Vec &x) {
     return s1 + s2 * s2 + s2 * s2 * s2 * s2;
 }
 
-// Function selection
 typedef function<double(const Vec &)> TestFunction;
 
 TestFunction selectFunction(int cbIndex) {
