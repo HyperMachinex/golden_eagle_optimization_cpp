@@ -21,7 +21,7 @@ typedef vector<double> Vec;
 #define SELECT_ZAKHAROV 0
 
 int populationsize = 1000;
-int Iteration = 1000;
+int Iteration[] = {500,1000,5000};
 int dim = 30;
 //const auto processor_count = thread::hardware_concurrency();
 using std::chrono::high_resolution_clock;
@@ -35,12 +35,15 @@ int main() {
     Vec lb(dim, -32768.0);
     Vec ub(dim, 32768.0);
     TestFunction fun = selectFunction(0);
-    cout << "Selected function is Ackley" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
+    cout << "Selected function is Ackley" << endl; 
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -53,12 +56,14 @@ int main() {
     Vec ub(dim, 10.0);
     TestFunction fun = selectFunction(1);
     cout << "Selected function is Dixonprice" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -70,12 +75,14 @@ int main() {
     Vec ub(dim, 600.0);
     TestFunction fun = selectFunction(2);
     cout << "Selected function is Griewank" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -87,12 +94,14 @@ int main() {
     Vec ub(dim, 5.0);
     TestFunction fun = selectFunction(3);
     cout << "Selected function is Perm" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -104,12 +113,14 @@ int main() {
     Vec ub(dim, 5.12);
     TestFunction fun = selectFunction(4);
     cout << "Selected function is Rastrigin" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -121,12 +132,14 @@ int main() {
     Vec ub(dim, 2048.0);
     TestFunction fun = selectFunction(5);
     cout << "Selected function is Rosenbrock" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -138,12 +151,14 @@ int main() {
     Vec ub(dim, 500.0);
     TestFunction fun = selectFunction(6);
     cout << "Selected function is Schwefel" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -155,12 +170,14 @@ int main() {
     Vec ub(dim, 5.12);
     TestFunction fun = selectFunction(7);
     cout << "Selected function is Sphere" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif
@@ -173,12 +190,14 @@ int main() {
     Vec ub(dim, 10.0);
     TestFunction fun = selectFunction(8);
     cout << "Selected function is Zakhraov" << endl;
-    auto t1 = high_resolution_clock::now();
-    GEO(fun, dim, lb, ub, populationsize, Iteration);
-    auto t2 = high_resolution_clock::now();
-    duration<double, std::milli> ms_double = t2 - t1;
-    cout << "Runtime:" << ms_double.count() << "ms\n";
-
+    for(int i=0; i< sizeof(Iteration); i++){
+        cout <<"Iteration Number:" << Iteration[i] << endl;
+        auto t1 = high_resolution_clock::now();
+        GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
+        auto t2 = high_resolution_clock::now();
+        duration<double, std::milli> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "ms\n";
+    }
     return 0;
 }
 #endif

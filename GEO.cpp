@@ -90,13 +90,13 @@ void GEO(TestFunction fun, int nvars, const Vec &lb, const Vec &ub, int populati
         }
 
         population = newPopulation;
-        cout << "Iteration " << iter + 1 << " Best Fitness: " << globalBestF << endl;
+        //cout << "Iteration " << iter + 1 << " Best Fitness: " << globalBestF << endl;
     }
 
-    cout << "Best solution: ";
-    for (double xi : globalBestX) {
-        cout << xi << " ";
-    }
-    cout << endl;
+    //cout << "Best solution: ";
+    //for (double xi : globalBestX) {
+    //    cout << xi << " ";
+    //}
+    //cout << endl;
     cout << "Best fitness: " << globalBestF << endl;
 }
