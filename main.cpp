@@ -36,7 +36,7 @@ int main() {
     Vec ub(dim, 32768.0);
     TestFunction fun = selectFunction(0);
     cout << "Selected function is Ackley" << endl; 
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -56,7 +56,7 @@ int main() {
     Vec ub(dim, 10.0);
     TestFunction fun = selectFunction(1);
     cout << "Selected function is Dixonprice" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -75,7 +75,7 @@ int main() {
     Vec ub(dim, 600.0);
     TestFunction fun = selectFunction(2);
     cout << "Selected function is Griewank" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -94,7 +94,7 @@ int main() {
     Vec ub(dim, 5.0);
     TestFunction fun = selectFunction(3);
     cout << "Selected function is Perm" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -113,7 +113,7 @@ int main() {
     Vec ub(dim, 5.12);
     TestFunction fun = selectFunction(4);
     cout << "Selected function is Rastrigin" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -132,7 +132,7 @@ int main() {
     Vec ub(dim, 2048.0);
     TestFunction fun = selectFunction(5);
     cout << "Selected function is Rosenbrock" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -151,7 +151,7 @@ int main() {
     Vec ub(dim, 500.0);
     TestFunction fun = selectFunction(6);
     cout << "Selected function is Schwefel" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -170,7 +170,7 @@ int main() {
     Vec ub(dim, 5.12);
     TestFunction fun = selectFunction(7);
     cout << "Selected function is Sphere" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
@@ -190,7 +190,7 @@ int main() {
     Vec ub(dim, 10.0);
     TestFunction fun = selectFunction(8);
     cout << "Selected function is Zakhraov" << endl;
-    for(int i=0; i< sizeof(Iteration); i++){
+    for(int i=0; i< sizeof(Iteration)/sizeof(int); i++){
         cout <<"Iteration Number:" << Iteration[i] << endl;
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
