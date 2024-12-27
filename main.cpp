@@ -41,8 +41,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -61,8 +61,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -80,8 +80,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -99,8 +99,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -118,8 +118,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -137,8 +137,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -156,8 +156,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -175,8 +175,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
@@ -195,8 +195,8 @@ int main() {
         auto t1 = high_resolution_clock::now();
         GEO(fun, dim, lb, ub, populationsize, Iteration[i]);
         auto t2 = high_resolution_clock::now();
-        duration<double, std::milli> ms_double = t2 - t1;
-        cout << "Runtime:" << ms_double.count() << "ms\n";
+        duration<double> ms_double = t2 - t1;
+        cout << "Runtime:" << ms_double.count() << "s\n";
     }
     return 0;
 }
